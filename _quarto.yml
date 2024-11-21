@@ -1,0 +1,60 @@
+project:
+  type: website
+
+website:
+  title: "Quarto Demo"
+  favicon: img/favicon.ico
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+
+  navbar:
+    logo: img/favicon.ico
+    logo-alt: Bioinformatics.ca Logo
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+  
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Introduction"
+        href: index.qmd
+      - text: "---"
+      - section: "About"
+        href: about.qmd
+        contents:
+          - about.qmd
+    
+    tools:
+      - icon: youtube
+        href: https://www.youtube.com/@bioinformaticsdotca
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/cbw-dev/
+          - text: Report a Bug
+            href:  https://github.com/cbw-dev/
+
+  page-footer:
+    left: "Copyright 2024, CBW DEV?" 
+    right:
+      - icon: youtube
+        href: https://www.youtube.com/@bioinformaticsdotca
+      - icon: github
+        menu:
+            - text: Source Code
+              href:  https://github.com/cbw-dev/
+            - text: Report a Bug
+              href:  https://github.com/cbw-dev/
+
+format:
+  html:
+    theme: cosmos
+    css: styles.css
+    toc: true
+
+
+
